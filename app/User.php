@@ -16,8 +16,24 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        't_name', 't_student_number', 't_major', 'password', 'remember_token',
-        'name', 'profile', 'created_at', 'updated_at',
+        't_name',
+        't_student_number', 
+        't_major', 
+        'password', 
+        'name', 
+        'profile',
+        'title',
+        'body',
+        'genre',
+        'type',
+        'point',
+        'url',
+        'image_01',
+        'image_02',
+        'image_03',
+        'image_04',
+        'created_at',
+        'updated_at',
     ];
 
     /**
@@ -27,14 +43,5 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password', 'remember_token',
-    ];
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
     ];
 }
