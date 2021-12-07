@@ -12,7 +12,7 @@
 */
 
 //POST
-Route::get('/', 'PostController@index');
+Route::get('/', 'UserController@index');
 
 //LOGIN-AUTH
 Auth::routes();
